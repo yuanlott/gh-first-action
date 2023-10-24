@@ -1,0 +1,13 @@
+name: First Workflow
+# When should it be executed? workflow_dispatch event for manually trigger
+on: workflow_dispatch
+jobs:
+  first-job:
+    # What kind of pre-defined VM to use
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print goodbye
+        run: echo "Done! good bye!"
+      
